@@ -1,0 +1,16 @@
+{
+  "name": "task_3",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "webpack serve --mode development --open",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.15.2"
+  }
+}
