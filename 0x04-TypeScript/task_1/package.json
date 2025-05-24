@@ -1,0 +1,20 @@
+{
+  "name": "task_1",
+  "version": "1.0.0",
+  "description": "Teacher interface using TypeScript",
+  "main": "js/main.ts",
+  "scripts": {
+    "start": "ts-node js/main.ts",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^9.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0"
+  }
+}

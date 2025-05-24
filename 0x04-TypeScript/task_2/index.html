@@ -1,0 +1,33 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Employee Factory</title>
+</head>
+<body>
+  <h1>Employee Factory</h1>
+
+  <label for="salaryInput">Enter Salary:</label>
+  <input type="text" id="salaryInput" placeholder="e.g. 400 or $500" />
+
+  <button id="createEmployeeBtn">Create Employee</button>
+
+  <div id="output" style="margin-top: 1rem;"></div>
+
+  <script src="bundle.js"></script>
+</body>
+</html>
+<script>
+  document.getElementById('createEmployeeBtn').addEventListener('click', () => {
+    const salaryInput = document.getElementById('salaryInput').value;
+    const outputDiv = document.getElementById('output');
+
+    try {
+      const employee = EmployeeFactory.createEmployee(salaryInput);
+      outputDiv.innerHTML = `<p>Employee created: ${JSON.stringify(employee)}</p>`;
+    } catch (error) {
+      outputDiv.innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+    }
+  });   
+</script>   
